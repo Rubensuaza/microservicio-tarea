@@ -17,6 +17,11 @@ public class TareaFabrica {
         return listaTareaCommand;
     }
 
+    public  TareaCommand tareaEntityToCommand(TareaEntity tareaEntity) {
+        TareaCommand tareaCommand = entityToCommand(tareaEntity);
+        return tareaCommand;
+    }
+
     private TareaCommand entityToCommand(TareaEntity tareaEntity){
         TareaCommand tareaCommand= new TareaCommand();
         tareaCommand.setIdTarea(tareaEntity.getIdTarea());

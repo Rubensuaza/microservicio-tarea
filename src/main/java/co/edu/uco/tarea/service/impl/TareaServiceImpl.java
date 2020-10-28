@@ -25,7 +25,7 @@ public class TareaServiceImpl implements TareaService {
     }
 
     @Override
-    public TareaEntity findById(int idTarea) {
-        return tareaRepository.findById(idTarea).orElse(null);
+    public TareaCommand findById(int idTarea) {
+        return tareaFabrica.tareaEntityToCommand(tareaRepository.findById(idTarea).orElse(null));
     }
 }

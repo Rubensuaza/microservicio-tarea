@@ -9,5 +9,5 @@ public interface TareaService {
 
     List<TareaCommand> findAll();
 
-    TareaEntity findById(int idTarea);
+    TareaCommand findById(int idTarea);
 }
